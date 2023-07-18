@@ -1,0 +1,14 @@
+const Info = require ('../models/info');
+
+const routeGetAllInfo = async (req, res) => {
+                                  
+    try{                            
+        const find = await Info.find()
+        return res.status(200).json(find)      
+    } catch (error) {                          
+        return res.status(500).json({error})    
+    } 
+
+};
+
+module.exports = { routeGetAllInfo };      

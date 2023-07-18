@@ -1,0 +1,16 @@
+const Info = require ('../models/info');
+
+const routePostInfo = async (req,res)=> {
+	
+	try{
+		const newInfo = new Info(req.body);		
+		const newEntry = await newInfo.save()	
+		res.send("New info registered"); 
+	} catch(error) {							
+		console.log(error)							
+		res.status(500).json(error)				
+	}
+	
+};
+
+module.exports = { routePostInfo };	

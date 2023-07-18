@@ -1,0 +1,18 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "deploy AWS back",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.0",
+    "nodemon": "^2.0.22"
+  }
+}
