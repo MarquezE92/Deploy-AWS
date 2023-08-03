@@ -6,7 +6,7 @@ function App() {
 const [info, setInfo] = useState("")
 
 function callInfo() {
-  axios.get('http://localhost:3002/info')
+  axios.get('/info')
     .then((response) => {
       setInfo(response.data[0]["content"])
     })
